@@ -1,0 +1,7 @@
+<launch>
+    
+    <include file="$(find turtlebot3_manipulation_moveit_config)/launch/move_group.launch"/> 
+    <!-- </include> -->
+    <node pkg="q_learning_project" type="detector.py" name="detect" cwd="node" output="screen"/>
+
+</launch>
